@@ -11,9 +11,9 @@ License: GPL2
 function autoLinkTwitter($contents)
 {
   //links mentions to the twitter profile
-  $contents=preg_replace('/(\s)@([a-zA-Z0-9]+)/',' <a href="http://twitter.com/\2">@\2</a>',$contents);
+  $contents=preg_replace('/(\s)@([a-zA-Z0-9_]+)/',' <a href="http://twitter.com/\2">@\2</a>',$contents);
   //links hashtags to the twtitter profile
-  $contents=preg_replace('/(\s)#([a-zA-Z0-9]+)/',' <a href="http://twitter.com/search?q=%23\2">#\2</a>',$contents);
+  $contents=preg_replace('/(\s)#([a-zA-Z0-9_]+)/',' <a href="http://twitter.com/search?q=%23\2">#\2</a>',$contents);
   return $contents;
 }
 //register our filter with wordpress 
