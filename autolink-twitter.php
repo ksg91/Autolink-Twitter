@@ -8,4 +8,10 @@ Author: Kishan Gor
 Author URI: http://ksg91.com
 License: GPL2
 */
+function autoLinkTwitter($contents)
+{
+  //links mentions to the twitter profile
+  $contents=preg_replace('/(\s)@([a-zA-Z]+)/',' <a href="http://twitter.com/\2">@\2</a>',$contents);
+  return $contents;
+}
 ?>
