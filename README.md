@@ -1,0 +1,1 @@
+A simple plugin for wordpress, which automatically link mentions in post or page to twitter profiles and hashtags to search link.
